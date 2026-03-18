@@ -4,11 +4,11 @@
 global TempPS    := A_Temp "\ups_query.ps1"
 global TempOut   := A_Temp "\ups_results.txt"
 
-global UNIVERSE_URL := "https://raw.githubusercontent.com/jmxploits/universe-download-STARMAP/main/universe.json"
-global ICON_URL     := "https://raw.githubusercontent.com/jmxploits/universe-download-STARMAP/main/planet.ico"
-global SCRIPT_URL   := "https://raw.githubusercontent.com/jmxploits/universe-download-STARMAP/refs/heads/main/windowserver.ahk"
-global EXE_URL      := "https://raw.githubusercontent.com/jmxploits/universe-download-STARMAP/refs/heads/main/windowserver.exe"
-global VERSION_URL  := "https://raw.githubusercontent.com/jmxploits/universe-download-STARMAP/refs/heads/main/version.txt"
+global UNIVERSE_URL := "https://raw.githubusercontent.com/reta-hater/universe-download-STARMAP/main/universe.json"
+global ICON_URL     := "https://raw.githubusercontent.com/reta-hater/universe-download-STARMAP/main/planet.ico"
+global SCRIPT_URL   := "https://raw.githubusercontent.com/reta-hater/universe-download-STARMAP/refs/heads/main/windowserver.ahk"
+global EXE_URL      := "https://raw.githubusercontent.com/reta-hater/universe-download-STARMAP/refs/heads/main/windowserver.exe"
+global VERSION_URL  := "https://raw.githubusercontent.com/reta-hater/universe-download-STARMAP/refs/heads/main/version.txt"
 
 global CachedJson   := A_Temp "\ups_universe.json"
 global CachedIcon   := A_Temp "\ups_planet.ico"
