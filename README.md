@@ -7,8 +7,4 @@ if you download v1.0 you are a reta and you shouldnt use this
 
 if it wasnt clear already, download DOWNLOAD_ME.zip and extract it
 
-use Cleanup.ahk to clean up the residual files in %TEMP% if you dont like those files being there
-
 should auto download universe.json and icon.ico so just run launcher and you should be good
-
-no ip loggers required! the code is open source so your free to check yourself
