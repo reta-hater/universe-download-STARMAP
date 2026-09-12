@@ -1,11 +1,3 @@
-; JSON.ahk — minimal JSON parser/serializer for AutoHotkey v2 (stable, v2.0+)
-; Drop-in replacement exposing the same API as cocobelgica/AutoHotkey-JSON:
-;   value := JSON.Load(text)          ; JSON text -> Map/Array/String/Number
-;   text  := JSON.Dump(value, indent) ; Map/Array/String/Number -> JSON text
-; Written from scratch for modern v2 syntax (no ByRef, no legacy Obj* funcs,
-; no v1-era Loop/percent-deref) since the original library targets a 2016
-; v2-alpha whose syntax was replaced before v2.0 stabilized.
-; Objects parse to Map(); arrays parse to Array(); JSON null -> "".
 
 class JSON {
     static Load(text) {
@@ -182,7 +174,8 @@ class JSON {
         }
         if (value == "")
             return '""'
-        if IsNumber(value)
+        local _t := Type(value)
+        if (_t == "Integer" || _t == "Float")
             return String(value)
         return JSON._QuoteString(value)
     }
